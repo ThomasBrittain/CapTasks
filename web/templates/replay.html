@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chart Replay</title>
+    <script async src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script async src="/static/chart_replay.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/index.css">
+</head>
+<body>
+
+    <h2 style="text-align: center;">Random Walk Replay</h2>
+
+    <div id="random_walk_value_div">
+        <p id="random_walk_time"></p>
+        <p id="random_walk_value"></p>
+    </div>
+
+        <div id="chart_div">
+            <canvas id="chart"></canvas>
+        </div>
+
+        <div id="replay_div">
+            <h2>Choose a Start Time and an End Time</h2>
+            <p>Format: YYYY-mm-DD HH:MM:SS</p>
+            <p>Ex: 2024-06-21 11:15:00</p>
+            <form action="./chart_replay" method="get">
+                <div id="start_time_div">
+                    <p>Start Time</p>
+                    <input type="text" id="start_time" name="start_time">
+                </div>
+                <div id="end_time_div">
+                    <p>End Time</p>
+                    <input type="text" id="end_time" name="end_time">
+                </div>
+                <input type="submit" id="submit_chart_replay">
+            </form>
+        </div>
+</body>
+</html>

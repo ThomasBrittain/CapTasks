@@ -1,0 +1,57 @@
+body {
+    background: whitesmoke;
+}
+
+#random_walk_value_div {
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    display: table;
+    margin: auto;
+    padding: 0px 25px;
+    box-shadow: 5px 5px 10px lightgray;
+}
+
+#random_walk_value {
+    font-weight: bold;
+    text-align: center;
+}
+
+#chart_div, #replay_div {
+    border: 1px solid lightgray;
+    background: white;
+    border-radius: 5px;
+    margin: 50px auto;
+    width: 800px;
+    box-shadow: 5px 5px 10px lightgray;
+}
+
+#replay_div {
+    text-align: center;
+    padding: 0px 0px 20px;
+}
+
+#start_time_div, #end_time_div {
+    display: flex;
+    align-items: center;
+}
+
+#start_time_div > p, #end_time_div > p {
+    padding: 0px 10px;
+    width: 100px;
+}
+
+input {
+    height: 30px;
+}
+
+#live_chart_link, #replay_link {
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    margin: auto;
+    text-align: center;
+    display: table;
+    padding-top: 25px;
+    color: royalblue;
+}
